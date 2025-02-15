@@ -90,7 +90,7 @@ To install this project using Git, follow these steps:
 - Clone the Repository:
 
 ```bash
-git clone https://github.com/hackirby/skuld
+git clone https://github.com/CoomedOnPeppy/Stealer
 ```
 - Navigate to the Project Directory:
 
